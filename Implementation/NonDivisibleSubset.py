@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Apr 19 09:52:36 2017
+Created on Wed Apr 19 11:26:26 2017
 
 @author: Lúcio
 """
@@ -13,7 +13,9 @@ def getDivisibleSumPairs(s, k):
                 numValidParis += 1
     
     return numValidParis
-    
+
+def nonDivisableSets(lst, k):
+    return 0
 
 if __name__ == '__main__':
     # Take inputs
@@ -22,7 +24,7 @@ if __name__ == '__main__':
     #s = list(map(int, input().strip().split(' ')))
     
     # Testcases
-    n, k = [6, 3]
-    s = [1, 3, 2, 6, 1, 2] 
+    n, k = [4, 3]
+    s = [1, 7, 2, 4] 
     
-    print(getDivisibleSumPairs(s, k))
+    print(nonDivisableSets(s, k))
